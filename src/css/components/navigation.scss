@@ -1,11 +1,32 @@
 .mobile-menu {
+  .menu-slide {
+    @apply transition-transform
+      duration-300
+      ease-in-out
+      transform
+      translate-x-full;
+  }
+
+  .menu-backdrop {
+    @apply transition-colors bg-transparent duration-500 ease-in-out;
+  }
+
   &[data-open='false'] {
-    @apply hidden;
+    .menu-backdrop {
+      @apply -translate-x-full;
+    }
   }
 
   &[data-open='true'] {
+    .menu-slide {
+      @apply transition-transform
+        duration-300
+        ease-in-out
+        transform
+        translate-x-0;
+    }
     .menu-backdrop {
-      @apply bg-gray-800 bg-opacity-80 backdrop-blur-sm;
+      @apply bg-gray-700 bg-opacity-80 backdrop-blur-sm translate-x-0;
     }
   }
 }
