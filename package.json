@@ -2,9 +2,7 @@
   "name": "parcel-tailwind-starter",
   "version": "1.0.0",
   "description": "",
-  "source": [
-    "src/index.html"
-  ],
+  "source": ["src/index.html", "src/components/buttons.html"],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"

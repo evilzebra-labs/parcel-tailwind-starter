@@ -26,4 +26,11 @@
         focus-visible:outline-brandSecondary-600
         text-white;
   }
+
+  &.btn--tertiary {
+    @apply bg-brandSecondary-600
+        hover:text-brandSecondary-500
+        focus-visible:outline-brandSecondary-600
+        text-white;
+  }
 }
