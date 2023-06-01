@@ -1,0 +1,11 @@
+.mobile-menu {
+  &[data-open='false'] {
+    @apply hidden;
+  }
+
+  &[data-open='true'] {
+    .menu-backdrop {
+      @apply bg-gray-800 bg-opacity-80 backdrop-blur-sm;
+    }
+  }
+}
